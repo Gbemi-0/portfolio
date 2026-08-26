@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gbemisola Aina — Business Analytics & Information Systems</title>
+<meta name="description" content="Portfolio of a Business Analytics & Information Systems graduate — data dashboards, AI-built tools, and resume.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+  EDIT-ME QUICK GUIDE
+  1. Search this file for "PLACEHOLDER" to find every spot you need
+     to personalize (name, email, LinkedIn, project links, photo).
+  2. Resume: drop your file in this folder named exactly "resume.pdf"
+     — the resume card in the Hero already points to that filename.
+  3. See README.md for a full guide to editing colors, fonts, and layout.
+============================================================= -->
+
+<nav class="topnav" id="topnav">
+  <a href="#top" class="logo">OGA<span class="logo-dot">.</span></a>
+  <div class="nav-links">
+    <a href="#about" data-color="pink">About</a>
+    <a href="#projects" data-color="blue">Data Projects</a>
+    <a href="#ai-projects" data-color="purple">AI Projects</a>
+    <a href="#contact" data-color="yellow">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-portrait">
+      <div class="portrait-frame">
+        <img src="myphoto.jpeg" alt="Gbemisola Aina" class="portrait-img">
+      </div>
+    </div>
+    <div class="hero-content">
+      <h1 class="display hero-title">Gbemisola Aina</h1>
+      <p class="mono hero-subhead"> Data Analyst</p>
+
+      <a href="resume.pdf" class="resume-card" target="_blank" rel="noopener">
+
+        <span class="resume-card-text">
+          <strong>Resume</strong>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-head">
+    <span class="legend-swatch" style="--swatch: var(--pink)"></span>
+    <span class="mono section-label">About</span>
+  </div>
+  <div class="about-grid reveal">
+    <div class="about-copy">
+      <h2 class="display">A bit more <span class="underline-accent">about me</span>.</h2>
+      <p>
+        Originally from Nigeria, I spent part of my elementary years living in Beijing, China. Being thrown into a very different culture and
+        being forced to adapt quickly helped me develop flexibility and resilience early on. Attending a local public school with next-to-zero 
+        Chinese-speaking skills shaped my work ethic despite uncertainty and my ability to learn quickly.
+        Those experiences have become my foundation, helping me succeed throughout university and into my professional life.
+      </p>
+    
+      <ul class="quick-facts">
+        <li><span class="mono fact-key">Education</span> Eastern Illinois University</li>
+        <li><span class="mono fact-key">Skills</span> Data cleaning & visualization, Data modeling, API integration, AI Augmentation </li>
+        <li><span class="mono fact-key">Tools</span> SQL (PostgreSQL & Oracle), Tableau, Snowflake, Power BI, MS Excel, VS Code </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- DATA PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-head">
+    <span class="legend-swatch" style="--swatch: var(--blue)"></span>
+    <span class="mono section-label">Data Projects</span>
+  </div>
+  <p class="section-intro reveal"> </p>
+
+  <div class="card-grid">
+    <article class="dash-card reveal" style="--card-accent: var(--blue)">
+      <div class="dash-card-top">
+        <span class="mono dash-tag">Course Project</span>
+        <h3 class="display">Netflix Content Performance Dashboard</h3>
+      </div>
+      <p class="dash-problem">
+        Pulled content
+        and performance data myself through a REST API, using Bruno to test calls and VS Code to
+        wrangle the responses. Converted JSON responses into usable CSVs,
+        cleaned and patched records together in Excel, then built an interactive Power BI dashboard
+        surfacing content viewership trends, popularity, content market share.
+      </p>
+      <a href="Netflix.pdf" class="card-link mono">See the results!  </a>
+    </article>
+
+    <article class="dash-card reveal" style="--card-accent: var(--blue)">
+      <div class="dash-card-top">
+        <span class="mono dash-tag">Personal Project</span>
+        <h3 class="display">Spotify Wrapped</h3>
+      </div>
+      <p class="dash-problem">
+        Queried Spotify data in PostgreSQL and visualized the data with Tableau to both mimic the results of my 2025 Spotify Wrapped and  
+        uncover new insights within my streaming history,
+        including charts for top tracks and artists, heatmaps that illustrate peak listening times and overall listening patterns.
+      </p>
+     
+      <a href="#" class="card-link mono">See the results! </a>
+    </article>
+  </div>
+</section>
+
+<!-- AI PROJECTS -->
+<section class="section" id="ai-projects">
+  <div class="section-head">
+    <span class="legend-swatch" style="--swatch: var(--purple)"></span>
+    <span class="mono section-label">AI Projects</span>
+  </div>
+  <p class="section-intro reveal">
+   
+</p>
+
+  <div class="ai-project reveal">
+    <div class="ai-demo-card">
+      <p class="mono ai-demo-eyebrow">Try it! Drag to your bookmarks bar</p>
+      <a class="bookmarklet-btn" href="javascript:%28function%20%28%29%20%7B%20try%20%7B%20if%20%28%21location.hostname.includes%28%27youtube.com%27%29%20%7C%7C%20location.href.indexOf%28%27%2Fplaylist%27%29%20%3D%3D%3D%20-1%29%20%7B%20alert%28%27Open%20a%20YouTube%20playlist%20page%20first%20%28a%20URL%20containing%20%22youtube.com%2Fplaylist%3Flist%3D...%22%29%2C%20then%20click%20this%20bookmark%20again.%27%29%3B%20return%3B%20%7D%20var%20old%20%3D%20document.getElementById%28%27pls-search-box%27%29%3B%20if%20%28old%29%20old.remove%28%29%3B%20var%20box%20%3D%20document.createElement%28%27div%27%29%3B%20box.id%20%3D%20%27pls-search-box%27%3B%20box.style.cssText%20%3D%20%27position%3Afixed%3Btop%3A12px%3Bright%3A12px%3Bz-index%3A2147483647%3Bbackground%3A%230f0f0f%3Bcolor%3A%23fff%3Bborder%3A1px%20solid%20%233a3a3a%3Bborder-radius%3A10px%3Bpadding%3A12px%2014px%3Bbox-shadow%3A0%204px%2018px%20rgba%280%2C0%2C0%2C.45%29%3Bfont-family%3ARoboto%2CArial%2Csans-serif%3Bwidth%3A280px%3B%27%3B%20var%20headerRow%20%3D%20document.createElement%28%27div%27%29%3B%20headerRow.style.cssText%20%3D%20%27display%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Aspace-between%3Bmargin-bottom%3A8px%3B%27%3B%20var%20label%20%3D%20document.createElement%28%27span%27%29%3B%20label.textContent%20%3D%20%27Playlist%20Search%27%3B%20label.style.cssText%20%3D%20%27font-weight%3A600%3Bfont-size%3A13px%3Bletter-spacing%3A.2px%3B%27%3B%20var%20closeBtn%20%3D%20document.createElement%28%27span%27%29%3B%20closeBtn.textContent%20%3D%20%27%5Cu00D7%27%3B%20closeBtn.style.cssText%20%3D%20%27cursor%3Apointer%3Bcolor%3A%23aaa%3Bfont-size%3A16px%3Bline-height%3A1%3Bpadding%3A2px%204px%3B%27%3B%20headerRow.appendChild%28label%29%3B%20headerRow.appendChild%28closeBtn%29%3B%20var%20input%20%3D%20document.createElement%28%27input%27%29%3B%20input.id%20%3D%20%27pls-input%27%3B%20input.type%20%3D%20%27text%27%3B%20input.placeholder%20%3D%20%27Search%20title%20or%20channel%27%3B%20input.disabled%20%3D%20true%3B%20input.style.cssText%20%3D%20%27width%3A100%25%3Bbox-sizing%3Aborder-box%3Bpadding%3A8px%2010px%3Bborder-radius%3A8px%3Bborder%3A1px%20solid%20%233a3a3a%3Bbackground%3A%231f1f1f%3Bcolor%3A%23fff%3Bfont-size%3A13px%3Boutline%3Anone%3B%27%3B%20var%20status%20%3D%20document.createElement%28%27div%27%29%3B%20status.id%20%3D%20%27pls-status%27%3B%20status.textContent%20%3D%20%27Loading%20playlist%5Cu2026%27%3B%20status.style.cssText%20%3D%20%27font-size%3A11px%3Bcolor%3A%23aaa%3Bmargin-top%3A6px%3B%27%3B%20var%20stopBtn%20%3D%20document.createElement%28%27button%27%29%3B%20stopBtn.textContent%20%3D%20%27Stop%20loading%20%26%20search%20now%27%3B%20stopBtn.style.cssText%20%3D%20%27font-size%3A11px%3Bbackground%3Atransparent%3Bcolor%3A%233ea6ff%3Bborder%3A1px%20solid%20%232c5170%3Bborder-radius%3A6px%3Bpadding%3A5px%208px%3Bcursor%3Apointer%3Bdisplay%3Anone%3Bmargin-top%3A6px%3B%27%3B%20box.appendChild%28headerRow%29%3B%20box.appendChild%28input%29%3B%20box.appendChild%28status%29%3B%20box.appendChild%28stopBtn%29%3B%20document.body.appendChild%28box%29%3B%20function%20items%28%29%20%7B%20return%20Array.prototype.slice.call%28document.querySelectorAll%28%27ytd-playlist-video-renderer%27%29%29%3B%20%7D%20var%20stopped%20%3D%20false%3B%20closeBtn.onclick%20%3D%20function%20%28%29%20%7B%20stopped%20%3D%20true%3B%20items%28%29.forEach%28function%20%28i%29%20%7B%20i.style.display%20%3D%20%27%27%3B%20%7D%29%3B%20box.remove%28%29%3B%20%7D%3B%20stopBtn.onclick%20%3D%20function%20%28%29%20%7B%20stopped%20%3D%20true%3B%20finish%28items%28%29.length%29%3B%20%7D%3B%20var%20lastCount%20%3D%20-1%2C%20stableRounds%20%3D%200%2C%20round%20%3D%200%2C%20maxRounds%20%3D%201200%3B%20var%20step%20%3D%20Math.max%28window.innerHeight%20%2A%202.5%2C%201400%29%3B%20var%20target%20%3D%200%3B%20function%20scrollStep%28%29%20%7B%20if%20%28stopped%29%20return%3B%20round%2B%2B%3B%20if%20%28round%20%3D%3D%3D%2012%29%20stopBtn.style.display%20%3D%20%27inline-block%27%3B%20target%20%2B%3D%20step%3B%20var%20maxScroll%20%3D%20document.documentElement.scrollHeight%3B%20window.scrollTo%280%2C%20Math.min%28target%2C%20maxScroll%29%29%3B%20var%20count%20%3D%20items%28%29.length%3B%20status.textContent%20%3D%20%27Loading%5Cu2026%20%27%20%2B%20count%20%2B%20%27%20videos%20found%27%3B%20if%20%28count%20%3D%3D%3D%20lastCount%20%26%26%20target%20%3E%3D%20maxScroll%29%20%7B%20stableRounds%2B%2B%3B%20%7D%20else%20%7B%20stableRounds%20%3D%200%3B%20lastCount%20%3D%20count%3B%20%7D%20if%20%28stableRounds%20%3E%3D%206%20%7C%7C%20round%20%3E%3D%20maxRounds%29%20%7B%20finish%28count%29%3B%20%7D%20else%20%7B%20setTimeout%28scrollStep%2C%20450%29%3B%20%7D%20%7D%20function%20finish%28count%29%20%7B%20stopped%20%3D%20true%3B%20status.textContent%20%3D%20count%20%2B%20%27%20videos%20loaded%20%5Cu2014%20type%20to%20search%27%3B%20stopBtn.style.display%20%3D%20%27none%27%3B%20input.disabled%20%3D%20false%3B%20window.scrollTo%280%2C%200%29%3B%20input.focus%28%29%3B%20%7D%20scrollStep%28%29%3B%20var%20debounce%20%3D%20null%3B%20input.oninput%20%3D%20function%20%28%29%20%7B%20clearTimeout%28debounce%29%3B%20status.textContent%20%3D%20%27Searching%5Cu2026%27%3B%20debounce%20%3D%20setTimeout%28filter%2C%20220%29%3B%20%7D%3B%20function%20filter%28%29%20%7B%20var%20q%20%3D%20input.value.trim%28%29.toLowerCase%28%29%3B%20var%20list%20%3D%20items%28%29%3B%20var%20matches%20%3D%200%3B%20list.forEach%28function%20%28item%29%20%7B%20var%20t%20%3D%20item.querySelector%28%27%23video-title%27%29%3B%20var%20c%20%3D%20item.querySelector%28%27ytd-channel-name%20%23text%2C%20ytd-channel-name%20a%27%29%3B%20var%20title%20%3D%20t%20%3F%20t.textContent.toLowerCase%28%29%20%3A%20%27%27%3B%20var%20channel%20%3D%20c%20%3F%20c.textContent.toLowerCase%28%29%20%3A%20%27%27%3B%20var%20isMatch%20%3D%20q%20%3D%3D%3D%20%27%27%20%7C%7C%20title.indexOf%28q%29%20%21%3D%3D%20-1%20%7C%7C%20channel.indexOf%28q%29%20%21%3D%3D%20-1%3B%20item.style.display%20%3D%20isMatch%20%3F%20%27%27%20%3A%20%27none%27%3B%20if%20%28isMatch%29%20matches%2B%2B%3B%20%7D%29%3B%20status.textContent%20%3D%20q%20%3D%3D%3D%20%27%27%20%3F%20%28list.length%20%2B%20%27%20videos%20total%27%29%20%3A%20%28matches%20%2B%20%27%20match%27%20%2B%20%28matches%20%3D%3D%3D%201%20%3F%20%27%27%20%3A%20%27es%27%29%20%2B%20%27%20of%20%27%20%2B%20list.length%29%3B%20%7D%20%7D%20catch%20%28err%29%20%7B%20alert%28%27Playlist%20Search%20hit%20an%20error%3A%20%27%20%2B%20err.message%29%3B%20%7D%20%7D%29%28%29%3B" onclick="return false;" title="Drag me to your bookmarks bar">
+        🔍 Playlist Search
+      </a>
+      <p class="mono ai-demo-hint">↖ Drag onto your bookmarks bar, then open any YouTube playlist</p>
+      <details class="ai-fallback">
+        <summary class="mono">Bookmarks bar hidden, or drag not working?</summary>
+        <p class="ai-fallback-text">
+          Show your bookmarks bar (<code>Ctrl/Cmd + Shift + B</code>), right-click it →
+          Add page, name it "Playlist Search", then paste this into the URL field:
+        </p>
+        <textarea id="bookmarklet-code" readonly>javascript:%28function%20%28%29%20%7B%20try%20%7B%20if%20%28%21location.hostname.includes%28%27youtube.com%27%29%20%7C%7C%20location.href.indexOf%28%27%2Fplaylist%27%29%20%3D%3D%3D%20-1%29%20%7B%20alert%28%27Open%20a%20YouTube%20playlist%20page%20first%20%28a%20URL%20containing%20%22youtube.com%2Fplaylist%3Flist%3D...%22%29%2C%20then%20click%20this%20bookmark%20again.%27%29%3B%20return%3B%20%7D%20var%20old%20%3D%20document.getElementById%28%27pls-search-box%27%29%3B%20if%20%28old%29%20old.remove%28%29%3B%20var%20box%20%3D%20document.createElement%28%27div%27%29%3B%20box.id%20%3D%20%27pls-search-box%27%3B%20box.style.cssText%20%3D%20%27position%3Afixed%3Btop%3A12px%3Bright%3A12px%3Bz-index%3A2147483647%3Bbackground%3A%230f0f0f%3Bcolor%3A%23fff%3Bborder%3A1px%20solid%20%233a3a3a%3Bborder-radius%3A10px%3Bpadding%3A12px%2014px%3Bbox-shadow%3A0%204px%2018px%20rgba%280%2C0%2C0%2C.45%29%3Bfont-family%3ARoboto%2CArial%2Csans-serif%3Bwidth%3A280px%3B%27%3B%20var%20headerRow%20%3D%20document.createElement%28%27div%27%29%3B%20headerRow.style.cssText%20%3D%20%27display%3Aflex%3Balign-items%3Acenter%3Bjustify-content%3Aspace-between%3Bmargin-bottom%3A8px%3B%27%3B%20var%20label%20%3D%20document.createElement%28%27span%27%29%3B%20label.textContent%20%3D%20%27Playlist%20Search%27%3B%20label.style.cssText%20%3D%20%27font-weight%3A600%3Bfont-size%3A13px%3Bletter-spacing%3A.2px%3B%27%3B%20var%20closeBtn%20%3D%20document.createElement%28%27span%27%29%3B%20closeBtn.textContent%20%3D%20%27%5Cu00D7%27%3B%20closeBtn.style.cssText%20%3D%20%27cursor%3Apointer%3Bcolor%3A%23aaa%3Bfont-size%3A16px%3Bline-height%3A1%3Bpadding%3A2px%204px%3B%27%3B%20headerRow.appendChild%28label%29%3B%20headerRow.appendChild%28closeBtn%29%3B%20var%20input%20%3D%20document.createElement%28%27input%27%29%3B%20input.id%20%3D%20%27pls-input%27%3B%20input.type%20%3D%20%27text%27%3B%20input.placeholder%20%3D%20%27Search%20title%20or%20channel%27%3B%20input.disabled%20%3D%20true%3B%20input.style.cssText%20%3D%20%27width%3A100%25%3Bbox-sizing%3Aborder-box%3Bpadding%3A8px%2010px%3Bborder-radius%3A8px%3Bborder%3A1px%20solid%20%233a3a3a%3Bbackground%3A%231f1f1f%3Bcolor%3A%23fff%3Bfont-size%3A13px%3Boutline%3Anone%3B%27%3B%20var%20status%20%3D%20document.createElement%28%27div%27%29%3B%20status.id%20%3D%20%27pls-status%27%3B%20status.textContent%20%3D%20%27Loading%20playlist%5Cu2026%27%3B%20status.style.cssText%20%3D%20%27font-size%3A11px%3Bcolor%3A%23aaa%3Bmargin-top%3A6px%3B%27%3B%20var%20stopBtn%20%3D%20document.createElement%28%27button%27%29%3B%20stopBtn.textContent%20%3D%20%27Stop%20loading%20%26%20search%20now%27%3B%20stopBtn.style.cssText%20%3D%20%27font-size%3A11px%3Bbackground%3Atransparent%3Bcolor%3A%233ea6ff%3Bborder%3A1px%20solid%20%232c5170%3Bborder-radius%3A6px%3Bpadding%3A5px%208px%3Bcursor%3Apointer%3Bdisplay%3Anone%3Bmargin-top%3A6px%3B%27%3B%20box.appendChild%28headerRow%29%3B%20box.appendChild%28input%29%3B%20box.appendChild%28status%29%3B%20box.appendChild%28stopBtn%29%3B%20document.body.appendChild%28box%29%3B%20function%20items%28%29%20%7B%20return%20Array.prototype.slice.call%28document.querySelectorAll%28%27ytd-playlist-video-renderer%27%29%29%3B%20%7D%20var%20stopped%20%3D%20false%3B%20closeBtn.onclick%20%3D%20function%20%28%29%20%7B%20stopped%20%3D%20true%3B%20items%28%29.forEach%28function%20%28i%29%20%7B%20i.style.display%20%3D%20%27%27%3B%20%7D%29%3B%20box.remove%28%29%3B%20%7D%3B%20stopBtn.onclick%20%3D%20function%20%28%29%20%7B%20stopped%20%3D%20true%3B%20finish%28items%28%29.length%29%3B%20%7D%3B%20var%20lastCount%20%3D%20-1%2C%20stableRounds%20%3D%200%2C%20round%20%3D%200%2C%20maxRounds%20%3D%201200%3B%20var%20step%20%3D%20Math.max%28window.innerHeight%20%2A%202.5%2C%201400%29%3B%20var%20target%20%3D%200%3B%20function%20scrollStep%28%29%20%7B%20if%20%28stopped%29%20return%3B%20round%2B%2B%3B%20if%20%28round%20%3D%3D%3D%2012%29%20stopBtn.style.display%20%3D%20%27inline-block%27%3B%20target%20%2B%3D%20step%3B%20var%20maxScroll%20%3D%20document.documentElement.scrollHeight%3B%20window.scrollTo%280%2C%20Math.min%28target%2C%20maxScroll%29%29%3B%20var%20count%20%3D%20items%28%29.length%3B%20status.textContent%20%3D%20%27Loading%5Cu2026%20%27%20%2B%20count%20%2B%20%27%20videos%20found%27%3B%20if%20%28count%20%3D%3D%3D%20lastCount%20%26%26%20target%20%3E%3D%20maxScroll%29%20%7B%20stableRounds%2B%2B%3B%20%7D%20else%20%7B%20stableRounds%20%3D%200%3B%20lastCount%20%3D%20count%3B%20%7D%20if%20%28stableRounds%20%3E%3D%206%20%7C%7C%20round%20%3E%3D%20maxRounds%29%20%7B%20finish%28count%29%3B%20%7D%20else%20%7B%20setTimeout%28scrollStep%2C%20450%29%3B%20%7D%20%7D%20function%20finish%28count%29%20%7B%20stopped%20%3D%20true%3B%20status.textContent%20%3D%20count%20%2B%20%27%20videos%20loaded%20%5Cu2014%20type%20to%20search%27%3B%20stopBtn.style.display%20%3D%20%27none%27%3B%20input.disabled%20%3D%20false%3B%20window.scrollTo%280%2C%200%29%3B%20input.focus%28%29%3B%20%7D%20scrollStep%28%29%3B%20var%20debounce%20%3D%20null%3B%20input.oninput%20%3D%20function%20%28%29%20%7B%20clearTimeout%28debounce%29%3B%20status.textContent%20%3D%20%27Searching%5Cu2026%27%3B%20debounce%20%3D%20setTimeout%28filter%2C%20220%29%3B%20%7D%3B%20function%20filter%28%29%20%7B%20var%20q%20%3D%20input.value.trim%28%29.toLowerCase%28%29%3B%20var%20list%20%3D%20items%28%29%3B%20var%20matches%20%3D%200%3B%20list.forEach%28function%20%28item%29%20%7B%20var%20t%20%3D%20item.querySelector%28%27%23video-title%27%29%3B%20var%20c%20%3D%20item.querySelector%28%27ytd-channel-name%20%23text%2C%20ytd-channel-name%20a%27%29%3B%20var%20title%20%3D%20t%20%3F%20t.textContent.toLowerCase%28%29%20%3A%20%27%27%3B%20var%20channel%20%3D%20c%20%3F%20c.textContent.toLowerCase%28%29%20%3A%20%27%27%3B%20var%20isMatch%20%3D%20q%20%3D%3D%3D%20%27%27%20%7C%7C%20title.indexOf%28q%29%20%21%3D%3D%20-1%20%7C%7C%20channel.indexOf%28q%29%20%21%3D%3D%20-1%3B%20item.style.display%20%3D%20isMatch%20%3F%20%27%27%20%3A%20%27none%27%3B%20if%20%28isMatch%29%20matches%2B%2B%3B%20%7D%29%3B%20status.textContent%20%3D%20q%20%3D%3D%3D%20%27%27%20%3F%20%28list.length%20%2B%20%27%20videos%20total%27%29%20%3A%20%28matches%20%2B%20%27%20match%27%20%2B%20%28matches%20%3D%3D%3D%201%20%3F%20%27%27%20%3A%20%27es%27%29%20%2B%20%27%20of%20%27%20%2B%20list.length%29%3B%20%7D%20%7D%20catch%20%28err%29%20%7B%20alert%28%27Playlist%20Search%20hit%20an%20error%3A%20%27%20%2B%20err.message%29%3B%20%7D%20%7D%29%28%29%3B</textarea>
+        <button class="btn btn-ghost small mono" id="copy-bookmarklet">Copy code</button>
+        <span class="mono copy-status" id="copy-status"></span>
+      </details>
+    </div>
+
+
+    
+    <div class="ai-writeup">
+      <span class="mono dash-tag">Personal Project</span>
+      <h3 class="display">YouTube Playlist Search</h3>
+      <p>
+        YouTube has no built-in way to search inside a long playlist
+        or Watch Later list.
+      </p>
+      <p>
+        This bookmarklet that auto-scrolls the page in paced steps
+        (to prevent brower overload on playlists with over 1000 videos), then drops in a live search box
+        that filters every loaded video by title or channel name in real time. I built this project to test my AI augmentation skills
+         before completing an AI Fluency certification from Anthropic.
+      </p>
+      <p>
+        <strong>The process:</strong> Directed Claude to write and refine the JavaScript,
+        then tested it myself against my own playlists, caught edge cases (huge playlists overloading the browser,
+        timing out), and iterated until major issues were handled. Runs entirely client-side,
+        nothing is sent anywhere.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-head">
+    <span class="legend-swatch" style="--swatch: var(--yellow-soft)"></span>
+    <span class="mono section-label">Contact</span>
+  </div>
+  <div class="contact-panel reveal">
+    <h2 class="display">Let's get in touch!</h2>
+    <div class="contact-links">
+      <a href="mailto:gbemisola.aina@hotmail.com" class="icon-btn" style="--icon-bg: var(--blue-soft); --icon-color: #1c5c7a;" aria-label="Email gbemisola.aina@hotmail.com" title="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <path d="M3 7l9 6 9-6"/>
+        </svg>
+      </a>
+      <a href="https://linkedin.com/in/gbemisola-aina" class="icon-btn" style="--icon-bg: var(--purple-soft); --icon-color: #4a3b8f;" target="_blank" rel="noopener" aria-label="LinkedIn — /in/gbemisola-aina" title="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <rect x="2.5" y="9" width="4" height="12" rx="0.6"/>
+          <circle cx="4.5" cy="4.2" r="2.3"/>
+          <path d="M9.5 9h4v2.3c0.7-1.2 2.1-2.6 4.5-2.6 4.6 0 5.5 3 5.5 6.9V21h-4v-5.7c0-1.4 0-3.2-2-3.2s-2.3 1.6-2.3 3.2V21h-4z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p class="mono"> © <span id="year"></span> <span class="ph">Gbemisola Aina</span>.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
