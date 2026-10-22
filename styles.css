@@ -364,6 +364,10 @@ a { color: inherit; }
   white-space: nowrap;
   user-select: none;
 }
+
+.bookmarklet-btn.launch-btn { cursor: pointer; }
+.ai-project + .ai-project { margin-top: 48px; }
+
 .bookmarklet-btn:active { cursor: grabbing; }
 .ai-demo-hint { font-size: 12px; color: #9a9ea6; margin: 14px 0 0; }
 .ai-fallback { margin-top: 18px; border-top: 1px solid #2a2a30; padding-top: 14px; }
